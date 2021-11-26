@@ -1,11 +1,16 @@
 {
   "name": "Flask-Dance with Google",
-  "description": "Testing Flask-Dance's OAuth integration with Google",
+  "description": "This app does one little thing, and does it well.",
   "keywords": [
+    "productivity",
+    "HTML5",
+    "scalpel",
     "oauth"
   ],
   "website": "https://github.com/singingwolfboy/flask-dance-google",
   "repository": "https://github.com/singingwolfboy/flask-dance-google",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "success_url": "/welcome",
   "env": {
     "FLASK_SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
@@ -22,6 +27,20 @@
     "GOOGLE_OAUTH_CLIENT_SECRET": {
       "description": "The OAuth client secret for your application, assigned by Google",
       "value": "client-secret-goes-here"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/python",
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "python app.py"
+      }
     }
   }
 }
